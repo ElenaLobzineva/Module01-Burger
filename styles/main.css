@@ -149,7 +149,7 @@ heder{
     flex-wrap: wrap;
     height: 100%;
 
-.banner-title h2 {
+.banner-subtitle {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 600;
