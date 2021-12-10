@@ -139,10 +139,9 @@ heder{
     margin-top: 140px;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 100px 727px 100px 100px;
+    padding: 100px;
     background-position: center center;
-    max-width: 1180px;
-    color: #FFFFFF;
+    max-height: 438px;
 }
 
 .banner-title {
@@ -150,33 +149,32 @@ heder{
     font-size: 60px;
     font-weight: 900;
     color: #FFFFFF;
-    height: 76px;
-    margin-top: 3px;
+    margin-top: 0;
+    margin-bottom: 12px;
 }
 .banner-title span {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: 600;
-    height: 18px;
-    width: 58px;
     text-transform: uppercase;
     background-color: #F37335;
-    border-radius: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    border-radius: 14px;
+    display: block;
+    text-align: center;
     max-width: 95px;
-    padding: 5px 20px 5px 17px;
+    margin-bottom: 10px;
+    padding: 5px 0;
 } 
 .banner-text {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 15px;
     color: #FAF9F9;
-    line-height: 24px;
-    margin: 0 auto;
-    display: contents;
+    line-height: 23px;
+    display: block;
+    margin-bottom: 35px;
+    margin-top: 0;
+    max-width: 310px;
 }
 .banner-link {
     font-family: "Nunito Sans", sans-serif;
@@ -186,10 +184,9 @@ heder{
     color: #1E2F40;
     background-color:#FBB731;
     border-radius: 5px;
-    display: flex;
-    justify-content: center;
+    justify-content: center center;
     text-transform: uppercase;
     width: 150px;
-    padding: 20px 10px;
-    line-height: 18px;
+    padding: 20px 27px;
+    line-height: 21px;
 }
