@@ -142,6 +142,8 @@ heder{
     padding: 100px;
     background-position: center center;
     max-height: 438px;
+    padding: 100px 100px 121px;
+    margin-bottom: 100px;
 }
 
 .banner-title {
@@ -189,4 +191,182 @@ heder{
     width: 150px;
     padding: 20px 27px;
     line-height: 21px;
+}
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+.menu-title {                        /* Заголовок основного меню  */
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1B2A49;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.menu-select {                          /* Выпадашка */
+    border: 1px solid #DEDEDE;
+    padding: 13px 30px;
+    border-radius: 22px;
+    color: #443737;
+    font-size: 15px;
+    appearance: none;
+    flex-basis: 279px;
+    background-image: url(../images/errow.svg);
+    background-repeat: no-repeat;
+    background-size: 12.79px 7.75px;
+    background-position: 89% center;
+}
+                           /* Основное меню */
+.menu-grid-cover {
+    width: 100%;
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+}
+.menu-grid-cover img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    width: 100%;
+    height: 430px;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-content: space-around;
+
+}
+.menu-grid-title {    /* Подпись к картинке */
+    font-family: "Nunito Sans", sans-serif;
+    width: 600;
+    font-size: 30px;
+    color: #1B2A49;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    margin-bottom: ;
+}
+.menu-grid-price {          /* Цена под картинкой */
+    width: 600;
+    font-size: 20px;
+    color: #979797;
+    text-align: center;
+}
+.menu-grid-btn {           /* Кнопка целиком */
+    background-color: #FBB731;
+    border-radius: 5px; /* Скругляем уголки */
+    width: 152px;
+    height: 38px;
+    border: 0;   
+    transform: translate(70%, -9%);
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.menu-grid-text {         /* Слово КУПИТЬ */
+    color: #1E2F40;
+    text-transform: uppercase;
+    font-family: "Nunito Sans", sans-serif;
+    width: 700;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.menu-grid-icon {          /* Иконка корзинки */
+    background-image: url(../images/cart.png);
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-bottom: -4px;
+    margin-right: 7px;
+}
+
+                                      /* Дополнительное меню */
+
+.dop-menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}                                    
+.dop-menu-title {                        /* Заголовок основного меню  */
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1B2A49;
+    margin-top: 69px;
+    margin-bottom: 4px;
+}
+.dop-menu-grid-cover {
+    width: 100%;
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+}
+.dop-menu-grid-cover img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    width: 100%;
+    height: 430px;
+}
+.dop-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-content: space-around;
+}
+.dop-menu-grid-title {    /* Подпись к картинке */
+    font-family: "Nunito Sans", sans-serif;
+    width: 600;
+    font-size: 30px;
+    color: #1B2A49;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    margin-bottom: ;
+}
+.dop-menu-grid-price {          /* Цена под картинкой */
+    font-family: "Nunito Sans", sans-serif;
+    width: 600;
+    font-size: 20px;
+    color: #979797;
+    text-align: center;
+}
+.dop-menu-grid-btn {           /* Кнопка целиком */
+    background-color: #FBB731;
+    border-radius: 5px; /* Скругляем уголки */
+    width: 152px;
+    height: 38px;
+    border: 0;   
+    transform: translate(70%, -9%);
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.dop-menu-grid-text {         /* Слово КУПИТЬ */
+    color: #1E2F40;
+    text-transform: uppercase;
+    font-family: "Nunito Sans", sans-serif;
+    width: 700;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.dop-menu-grid-icon {          /* Иконка корзинки */
+    background-image: url(../images/cart.png);
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-bottom: -4px;
+    margin-right: 7px;
+    
 }
