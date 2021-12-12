@@ -18,6 +18,13 @@ heder{
     padding-top: 26px;
     padding-bottom: 25px;
 }
+.heder-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 68.5%;
+
+}
 .heder-nav{
   display: flex;
   list-style-type: none;
@@ -187,8 +194,14 @@ heder{
     border-radius: 5px;
     text-transform: uppercase;
     width: 150px;
-    padding: 20px 27px;
+    padding: 18px 25px;
     line-height: 21px;
+    border: 1px solid #FBB731;
+}
+.banner-link:hover {
+    background-color: transparent;
+    color: #FBB731;
+
 }
 .menu-header {
     display: flex;
@@ -240,7 +253,7 @@ heder{
     align-content: space-around;
 
 }
-.menu-grid-title {    /* Подпись к картинке */
+.menu-grid-title {             /* Подпись к картинке */
     font-family: "Nunito Sans", sans-serif;
     font-weight: 600;
     font-size: 30px;
@@ -257,7 +270,7 @@ heder{
 }
 .menu-grid-btn {           /* Кнопка целиком */
     background-color: #FBB731;
-    border-radius: 5px; /* Скругляем уголки */
+    border-radius: 5px; 
     width: 152px;
     height: 37px;
     border: 0;   
@@ -265,6 +278,10 @@ heder{
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+}
+.menu-grid-btn:hover {
+    background-color: #F37335;
+    cursor: pointer;
 }
 .menu-grid-text {         /* Слово КУПИТЬ */
     color: #1E2F40;
@@ -348,6 +365,11 @@ heder{
     justify-content: center;
     margin: 0 auto;
 }
+.dop-menu-grid-btn:hover {
+    background-color: #F37335 ;
+    cursor: pointer;
+}
+
 .dop-menu-grid-text {         /* Слово КУПИТЬ */
     color: #1E2F40;
     text-transform: uppercase;
@@ -377,7 +399,6 @@ heder{
 .footer-box {
     display: flex;
     justify-content: space-between;
-
 }
 .footer-logo {
     width: 63px;
@@ -393,18 +414,23 @@ heder{
     margin-bottom: 20px;
     margin-top: 0;
 }
-.footer-item li {
+.footer-list li {
     margin-bottom: 9px;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     color: #FAF9F9;
     font-weight: 700;
     line-height: 24px;
+    list-style-type: none;
 }
-.footer-item a {
+.footer-list a {
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
+
+}
+.footer-list a:hover {
+    color: #FBB731;
 }
 .footer-item span {
     color: #DEDEDE;
@@ -412,14 +438,19 @@ heder{
     font-weight: 400;
     margin-bottom: 2px;
 }
-.footer-tel ul {
+.footer-list-tel {
+    margin-top: 0;
+}
+.footer-list-tel li {
+    margin-bottom: 12px;
+}
+.footer-list-tel a  {
     font-size: 20px;
     color: #FBB731;
     font-weight: 900;
-    margin-top: 0;
 }
-.footer-tel li {
-    margin-bottom: 12px;
+.footer-list-tel a:hover {
+    color: #DEDEDE;
 }
 .footer-list {
     padding-left: 0;
