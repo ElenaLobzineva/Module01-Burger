@@ -179,14 +179,12 @@ heder{
     max-width: 310px;
 }
 .banner-link {
-    font-family: "Nunito Sans", sans-serif;
     font-weight: 700;
     font-size: 14px;
     text-decoration: none;
     color: #1E2F40;
     background-color:#FBB731;
     border-radius: 5px;
-    justify-content: center center;
     text-transform: uppercase;
     width: 150px;
     padding: 20px 27px;
@@ -238,19 +236,18 @@ heder{
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 50px 20px;
     align-content: space-around;
 
 }
 .menu-grid-title {    /* Подпись к картинке */
     font-family: "Nunito Sans", sans-serif;
-    width: 600;
+    font-weight: 600;
     font-size: 30px;
     color: #1B2A49;
     margin-top: 20px;
     margin-bottom: 0;
     text-align: center;
-    margin-bottom: ;
 }
 .menu-grid-price {          /* Цена под картинкой */
     width: 600;
@@ -262,11 +259,12 @@ heder{
     background-color: #FBB731;
     border-radius: 5px; /* Скругляем уголки */
     width: 152px;
-    height: 38px;
+    height: 37px;
     border: 0;   
-    transform: translate(70%, -9%);
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin-bottom: 25px;
+    margin: 0 auto;
 }
 .menu-grid-text {         /* Слово КУПИТЬ */
     color: #1E2F40;
@@ -275,7 +273,7 @@ heder{
     width: 700;
     font-size: 14px;
     text-decoration: none;
-    margin-left: 5px;
+    margin-left: 5px;    
 }
 .menu-grid-icon {          /* Иконка корзинки */
     background-image: url(../images/cart.png);
@@ -293,15 +291,14 @@ heder{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 34px;
 }                                    
-.dop-menu-title {                        /* Заголовок основного меню  */
+.dop-menu-title {                        /* Заголовок доп. меню  */
     font-size: 44px;
     font-weight: 700;
     text-transform: uppercase;
     color: #1B2A49;
-    margin-top: 69px;
-    margin-bottom: 4px;
+    margin-top: 88px;
+
 }
 .dop-menu-grid-cover {
     width: 100%;
@@ -321,35 +318,35 @@ heder{
 .dop-menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 50px 20px;
     align-content: space-around;
 }
-.dop-menu-grid-title {    /* Подпись к картинке */
+.dop-menu-grid-title {                /* Подпись к картинке */
     font-family: "Nunito Sans", sans-serif;
-    width: 600;
+    font-weight: 600;
     font-size: 30px;
     color: #1B2A49;
     margin-top: 20px;
     margin-bottom: 0;
     text-align: center;
-    margin-bottom: ;
 }
-.dop-menu-grid-price {          /* Цена под картинкой */
+.dop-menu-grid-price {                    /* Цена под картинкой */
     font-family: "Nunito Sans", sans-serif;
     width: 600;
     font-size: 20px;
     color: #979797;
     text-align: center;
 }
-.dop-menu-grid-btn {           /* Кнопка целиком */
+.dop-menu-grid-btn {                     /* Кнопка целиком */
     background-color: #FBB731;
     border-radius: 5px; /* Скругляем уголки */
     width: 152px;
-    height: 38px;
+    height: 37px;
     border: 0;   
-    transform: translate(70%, -9%);
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin-bottom: 25px;
+    margin: 0 auto;
 }
 .dop-menu-grid-text {         /* Слово КУПИТЬ */
     color: #1E2F40;
@@ -367,6 +364,63 @@ heder{
     background-repeat: no-repeat;
     display: inline-block;
     margin-bottom: -4px;
-    margin-right: 7px;
-    
+    margin-right: 7px;   
+}
+                                 /* ПОДВАЛ */
+.footer {
+    background: #1E2F40;
+    color: #fff;
+    padding-top: 117px;
+    padding-bottom: 106px;
+    margin-top: 130px;
+}
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer-logo {
+    width: 63px;
+    height: 56px;
+}
+.footer-item {
+    flex: 0 0 auto;
+}
+.footer-item h2 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.footer-item li {
+    margin-bottom: 9px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #FAF9F9;
+    font-weight: 700;
+    line-height: 24px;
+}
+.footer-item a {
+    color: #DEDEDE;
+    text-decoration: none;
+    font-weight: 400;
+}
+.footer-item span {
+    color: #DEDEDE;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.footer-tel ul {
+    font-size: 20px;
+    color: #FBB731;
+    font-weight: 900;
+    margin-top: 0;
+}
+.footer-tel li {
+    margin-bottom: 12px;
+}
+.footer-list {
+    padding-left: 0;
 }
