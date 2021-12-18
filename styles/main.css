@@ -10,6 +10,7 @@ body {
 heder{
     border-bottom: 1px solid #DEDEDE;
 }
+
 .heder{
     font-family: 'Open Sans', sans-serif;
     display: flex;
@@ -42,6 +43,7 @@ heder{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .heder-nav a{
     font-weight: 600;
     font-size: 20px;
@@ -59,6 +61,7 @@ heder{
 .heder-nav a.active::after {
     background: #FFC725;
 }
+
 .button{
     display: flex;
     align-items: center;
@@ -147,7 +150,7 @@ heder{
     background-size: cover;
     background-repeat: no-repeat;
     padding: 100px;
-    background-position: center center;
+    background-position: 0 center;
     max-height: 438px;
     padding: 100px 100px 121px;
     margin-bottom: 80px;
@@ -606,4 +609,147 @@ heder{
     font-weight: 700;
     margin-bottom: 10px;
     margin-top: 0;
+}
+
+    /*Modal*/
+.burger {                /*Меню из трех полосок - бургер*/
+    display: block;
+    background-image: url(../images/heder-burger-logo.svg);
+    background-size: contain;
+    width: 34px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    }   
+.burger-close {       /*Крестик закрывающий окно*/
+    background-image: url(../images/close.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 22px;
+    height: 22px;
+    }
+#modal {       /*Окно с меню*/
+    max-width: 500px;
+    background-color: #FFF8DC;
+    text-align: center;
+    position: absolute;
+    left: 25px;
+    right: 0;
+    margin: 20px auto 0;
+    padding: 60px 30px;
+    box-sizing: border-box;   
+    }
+
+                               /*Меню в окне*/
+.heder-nav-modal {        
+    flex-direction: column;
+    max-width: 246px;
+    align-items: center;
+    margin: 0 auto;
+    list-style-type: none;
+    line-height: 30px;
+    }
+    .heder-nav-modal  a{        
+    font-weight: 600;
+    font-size: 20px;
+    color: #443737; 
+    text-decoration: none;
+
+
+    }
+.heder-nav-modal a:hover{
+    color: #FFC725;
+    }
+.heder-nav-modal a.active::after{
+    content: '';
+    width: 61px;
+    height: 3px;
+    border-radius: 1.5px;
+    display: block;
+
+    }
+.heder-nav-modal a.active::after {
+    background: #FFC725;
+    }
+
+/*Responsive*/
+
+@media (min-width: 1001px) {                     /*Скрываем новое меню с телефонами сбоку, когда размер больше 1001px */
+    .footer-list + .footer-list-tel {
+        display: none;
+    }
+}
+@media (min-width: 766px) {                    /*Скрываем  меню-бургер, когда размер больше 765px */
+    .heder-burger {
+        display: none;
+    }
+}
+@media (max-width: 765px) {
+     .heder-nav {
+         display: none;
+     }
+}
+@media (max-width:1000px) {
+    .container {
+        max-width: 738px;
+    }
+    .heder-logo {
+        width: 150px;
+        height: 48px;
+        background-size: contain;
+    }
+    .heder-nav {
+        gap: 22px;
+    }
+    .heder-item {
+        flex-basis: 75.5%;
+    }
+    .bg {
+        margin-bottom: 72px;
+    }
+    .banner-box {
+        background-position: -80px center;
+        padding: 100px 40px 120px;
+    }
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 15px ;
+    }
+    .dop-menu {
+      overflow: hidden;
+      height: 838px;  
+    }
+    .dop-menu .dop-menu-grid {
+        display: flex;
+        width: auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-bottom: 50px;
+    }
+    .dop-menu .dop-menu-grid-item {
+        flex: 0 0 281px;
+    }
+    .dop-menu .menu-grid-cover,
+    .dop-menu .menu-grid-cover img {
+        height: 320px;
+    }
+    .footer-tel {                                 /*Старое меню с телефонами скрывается, когда размер <1000*/
+        display: none;
+    }
+    .footer-list + .footer-list-tel {             /*Новое меню с телефонами сбоку появляется, когда размер <1000*/
+        display: block;
+    }
+}
+@media (max-width: 320px){
+	.banner-box {
+		background-position: 25% center;
+    }
 }
