@@ -662,8 +662,6 @@ heder{
     font-size: 20px;
     color: #443737; 
     text-decoration: none;
-
-
     }
 .heder-nav-modal a:hover{
     color: #FFC725;
@@ -674,6 +672,8 @@ heder{
     height: 3px;
     border-radius: 1.5px;
     display: block;
+    margin-left: auto;
+    margin-right: auto 
 
     }
 .heder-nav-modal a.active::after {
@@ -748,8 +748,47 @@ heder{
         display: block;
     }
 }
-@media (max-width: 320px){
-	.banner-box {
-		background-position: 25% center;
+@media (max-width: 320px) {
+.button {
+    width: 74px;
+    height: 26px;
+}
+.title {
+    font-size: 38px;
+    margin-top: 11p;
+}
+.breadcrumbs {
+    margin-top: -64px;
+}
+.bg {
+    width: 319px;
+    height: 31px;
+   margin: 0 auto;
+}
+.banner {
+    margin-top: -98px;
+}
+.banner-box {
+	background-position: 25%;
+}
+.menu-title {
+    font-size: 27px;
+    margin-right: 29px;
+    margin-bottom: 21px;
     }
+.menu-select {
+    font-size: 12px;
+    max-width: 136px;
+    }
+.menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7px 10px;
+    }
+.menu-grid-cover img {
+    max-height: 180px;
+    margin: -124px auto;
+}
+.menu-grid-title {
+    margin-top: -230px;
+}
 }
