@@ -674,7 +674,6 @@ heder{
     display: block;
     margin-left: auto;
     margin-right: auto 
-
     }
 .heder-nav-modal a.active::after {
     background: #FFC725;
@@ -713,8 +712,12 @@ heder{
         flex-basis: 75.5%;
     }
     .bg {
-        margin-bottom: 72px;
+        margin-bottom: -66px;
     }
+    .menu-header {
+        margin-top: -23px;
+    }
+
     .banner-box {
         background-position: -80px center;
         padding: 100px 40px 120px;
@@ -723,72 +726,39 @@ heder{
         grid-template-columns: repeat(2, 1fr);
         gap: 50px 15px ;
     }
+    .dop-menu-header {
+        margin-top: -14px;
+    }
+
     .dop-menu {
       overflow: hidden;
-      height: 838px;  
+      height: 838px;
+      margin-bottom: 0px;
     }
     .dop-menu .dop-menu-grid {
-        display: flex;
-        width: auto;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        padding-bottom: 50px;
+     display: flex;
+     width: auto;
+     overflow-x: scroll;
+     overflow-y: hidden;
+     padding-bottom: 50px;
+    }
+    .dop-menu-grid-cover {
+     height: 320px;
     }
     .dop-menu .dop-menu-grid-item {
-        flex: 0 0 281px;
+     flex: 0 0 281px;
     }
-    .dop-menu .menu-grid-cover,
-    .dop-menu .menu-grid-cover img {
-        height: 320px;
+    .footer {
+      margin-top: -62px
+    }
+    .footer-box {
+        margin-top: -50px;
     }
     .footer-tel {                                 /*Старое меню с телефонами скрывается, когда размер <1000*/
-        display: none;
+     display: none;
     }
     .footer-list + .footer-list-tel {             /*Новое меню с телефонами сбоку появляется, когда размер <1000*/
-        display: block;
+     display: block;
     }
 }
-@media (max-width: 320px) {
-.button {
-    width: 74px;
-    height: 26px;
-}
-.title {
-    font-size: 38px;
-    margin-top: 11p;
-}
-.breadcrumbs {
-    margin-top: -64px;
-}
-.bg {
-    width: 319px;
-    height: 31px;
-   margin: 0 auto;
-}
-.banner {
-    margin-top: -98px;
-}
-.banner-box {
-	background-position: 25%;
-}
-.menu-title {
-    font-size: 27px;
-    margin-right: 29px;
-    margin-bottom: 21px;
-    }
-.menu-select {
-    font-size: 12px;
-    max-width: 136px;
-    }
-.menu-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 7px 10px;
-    }
-.menu-grid-cover img {
-    max-height: 180px;
-    margin: -124px auto;
-}
-.menu-grid-title {
-    margin-top: -230px;
-}
-}
+ 
