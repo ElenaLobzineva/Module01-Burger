@@ -230,7 +230,9 @@ heder{
     border-radius: 22px;
     color: #443737;
     font-size: 15px;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     flex-basis: 279px;
     background-image: url(../images/errow.svg);
     background-repeat: no-repeat;
@@ -249,7 +251,8 @@ heder{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     height: 430px;
 }
@@ -270,7 +273,7 @@ heder{
     text-align: center;
 }
 .menu-grid-price {          /* Цена под картинкой */
-    width: 600;
+    width: 600px;
     font-size: 20px;
     color: #979797;
     text-align: center;
@@ -294,7 +297,7 @@ heder{
     color: #1E2F40;
     text-transform: uppercase;
     font-family: "Nunito Sans", sans-serif;
-    width: 700;
+    font-weight: 700;
     font-size: 14px;
     text-decoration: none;
     margin-left: 5px;    
@@ -335,7 +338,8 @@ heder{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     height: 430px;
 }
@@ -356,7 +360,7 @@ heder{
 }
 .dop-menu-grid-price {                    /* Цена под картинкой */
     font-family: "Nunito Sans", sans-serif;
-    width: 600;
+    font-weight: 600;
     font-size: 20px;
     color: #979797;
     text-align: center;
@@ -381,7 +385,7 @@ heder{
     color: #1E2F40;
     text-transform: uppercase;
     font-family: "Nunito Sans", sans-serif;
-    width: 700;
+    font-weight: 700;
     font-size: 14px;
     text-decoration: none;
     margin-left: 5px;
@@ -465,7 +469,7 @@ heder{
 .button-up {
     background-color: #FBB731;
     color: #1E2F40;
-    width: 700;
+    font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
@@ -686,16 +690,6 @@ heder{
         display: none;
     }
 }
-@media (min-width: 766px) {                    /*Скрываем  меню-бургер, когда размер больше 765px */
-    .heder-burger {
-        display: none;
-    }
-}
-@media (max-width: 765px) {
-     .heder-nav {
-         display: none;
-     }
-}
 @media (max-width:1000px) {
     .container {
         max-width: 738px;
@@ -761,4 +755,68 @@ heder{
      display: block;
     }
 }
- 
+@media (min-width: 766px) {                    /*Скрываем  меню-бургер, когда ширина больше 765px */
+    .heder-burger {
+        display: none;
+    }
+}
+@media (max-width: 765px) {
+     .heder-nav {
+         display: none;
+     }
+     .heder {
+         gap: 21px;
+     }
+}
+
+ @media (max-width:567px) {
+    .title {
+    font-size: 38px;
+    }
+    .breadcrumbs {
+    font-size: 14px;
+    }
+    .description {
+    font-size: 12px;
+    }
+    .bg {
+      padding: 55px;  
+    }
+    .banner-box {
+    background-position: 17% center;
+    padding: 35px 24px 34px;
+    }
+    .menu-title {
+        font-size: 27px;
+        margin-right: 24px;
+    }
+    .menu-select {
+        font-size: 12px;
+        padding: 9px 16px;
+    }
+    .menu-grid-title {
+        font-size: 13px;
+    }
+    .menu-grid-price {
+        font-size: 16px;
+    }
+
+ }
+ @media (max-width:360px) {
+     .heder-logo {
+         width: 116px;
+         height: 37px;
+         background-size: contain;
+     }
+         .bg {
+        background-position: 25% center;
+    }
+ }
+  @media (max-width:320px) {
+      .banner-box {
+          background-position: 25% center;
+        }
+        
+
+ }
+
