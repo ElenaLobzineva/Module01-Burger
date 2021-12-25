@@ -768,6 +768,9 @@ body {
      .heder {
          gap: 21px;
      }
+     #modal {
+        margin: 23px 65px;
+    }
 }
  @media (max-width:567px) {
     .title {
@@ -890,6 +893,10 @@ body {
     }
     .bg {
         background-position: 25% center;
+    }
+    #modal {
+         margin: 23px 22px;
+         padding: 15px;
     }
 }
 @media (max-width:320px) {
