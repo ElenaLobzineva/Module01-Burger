@@ -7,7 +7,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-heder{
+.heder{
     border-bottom: 1px solid #DEDEDE;
 }
 
@@ -273,7 +273,7 @@ heder{
     text-align: center;
 }
 .menu-grid-price {          /* Цена под картинкой */
-    width: 600px;
+    font-weight: 700px;
     font-size: 20px;
     color: #979797;
     text-align: center;
@@ -649,7 +649,8 @@ heder{
     right: 0;
     margin: 20px auto 0;
     padding: 60px 30px;
-    box-sizing: border-box;   
+    box-sizing: border-box;  
+    top: -400px; 
     }
 
                                /*Меню в окне*/
@@ -711,14 +712,14 @@ heder{
     .menu-header {
         margin-top: -23px;
     }
-
     .banner-box {
         background-position: -80px center;
         padding: 100px 40px 120px;
     }
     .menu-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 50px 15px ;
+        gap: 50px 15px;
+        margin-bottom: 65px;
     }
     .dop-menu-header {
         margin-top: -14px;
@@ -768,23 +769,24 @@ heder{
          gap: 21px;
      }
 }
-
  @media (max-width:567px) {
     .title {
-    font-size: 38px;
+        font-size: 38px;
     }
     .breadcrumbs {
-    font-size: 14px;
+        font-size: 14px;
     }
     .description {
-    font-size: 12px;
+        font-size: 12px;
     }
     .bg {
-      padding: 55px;  
+        padding: 55px 0;
+         margin-bottom: 33px;
     }
     .banner-box {
-    background-position: 17% center;
-    padding: 35px 24px 34px;
+        background-position: 17% center;
+        padding: 42px 24px 54px;
+        margin-bottom: 66px;
     }
     .menu-title {
         font-size: 27px;
@@ -796,27 +798,112 @@ heder{
     }
     .menu-grid-title {
         font-size: 13px;
+        margin-bottom: 7px;
     }
     .menu-grid-price {
         font-size: 16px;
+        margin-bottom: 7px;
     }
+    .banner {
+        margin-top: -107px;
+    }
+    .banner-text {
+        margin-bottom: 30px;
+    }
+    .menu-grid-cover img {
+        height: 100%;
+    }
+    .menu-grid-cover {
+        height: 180px;
+        margin-bottom: -14px;
+    }
+    .menu-grid {
+        gap: 24px 10px;
+    }
+    .menu-grid-cover img {
+        height: 100%;
+    }
+    .menu-grid-cover {
+        height: 180px;
+        margin-bottom: -14px;
+    }
+    .menu-grid {
+        gap: 24px 10px;
+    }
+    .dop-menu {
+        margin-bottom: -436px;
+    }
+    .dop-menu-grid-title {
+    font-size: 13px;
+    }
+    .dop-menu-title {
+        font-size: 27px;
+        margin-top: 10px;
+    }
+    .dop-menu-grid-price {
+        font-size: 16px;
+        margin-bottom: 7px;
+    }
+    .dop-menu .dop-menu-grid-item {
+    flex: 0 0 139px;
+    }
+    .dop-menu .dop-menu-grid-cover, .dop-menu .dop-menu-grid-cover img {
+    height: 180px;
+    }
+    .footer-box {
+        position: relative;
+        flex-direction: column;
 
- }
+    }
+    .footer-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .footer-item {
+        flex-basis: 80px;
+        margin-bottom: 10px;
+    }
+    .footer-list + .footer-list-tel {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 31px;
+        margin-top: -13px;
+    }
+    .footer-item h2 {
+        font-size: 18px ;
+        margin-bottom:  24px;
+    }
+    .footer-item {
+        margin-top: 87px;
+    }
+    .footer-list {
+        margin-bottom: 10px;
+    }
+}
+
+}
  @media (max-width:360px) {
-     .heder-logo {
-         width: 116px;
-         height: 37px;
-         background-size: contain;
-     }
-         .bg {
+    .heder-logo {
+        width: 116px;
+        height: 37px;
+        background-size: contain;
+    }
+    .bg {
         background-position: 25% center;
     }
- }
-  @media (max-width:320px) {
-      .banner-box {
-          background-position: 25% center;
+}
+@media (max-width:320px) {
+    .banner-box {
+        background-position: 25% center;
         }
-        
-
- }
-
+        .container {
+            max-width: 319px;
+        }
+        .menu-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px 5px;
+            margin-bottom: 65px;
+}
+}
