@@ -753,27 +753,35 @@ body {
     }
     .content {
        margin-top: -55px;
+       width: 1118px;
     }
     .content-title span {
         font-size: 22px;
         margin-left: 10px;
         }
     .content-title  {
-        font-size: 90px;
-        line-height: 101px;
+        font-size: 60px;
+        line-height: 88px;
         margin-left: 10px;
         margin-top: -95px;
     }
     .content-text {
         font-size: 14px;
         margin-left: 10px;
+        max-width: 312px;
     }
     .content-link {
         margin-left: 10px;
     }
-    .main img {
-        width: 40em;
-        margin-right: 200px;
+    .main img { 
+        width: 540px;
+        right: -29px;
+        top: 70px;
+    }
+    }
+    .visual-bg {
+        width: 150px;
+        margin-right: 10px;
     }
 }
 @media (min-width: 766px) {                    /*Скрываем  меню-бургер, когда ширина больше 765px */
@@ -791,7 +799,7 @@ body {
      #modal {
         margin: 23px 65px;
     }
-        .content-title span {
+    .content-title span {
         font-size: 21px;
         margin-left: 10px;
         margin-top: -95px;
@@ -799,11 +807,9 @@ body {
     .content {
         margin-bottom: -58px;
     }
-    .main img {
-        max-height: 43em;
-}
     .promo {
         padding-top: 106px;
+        gap: 30px 0px;
     }
     .promo-left {
         padding: 54px 30px;
@@ -813,7 +819,7 @@ body {
     }
     .footer {
         margin-top: 80px;
-}
+    }
 }
  @media (max-width:567px) {
     .title {
@@ -926,11 +932,7 @@ body {
     .footer-list {
         margin-bottom: 10px;
     }
-    .content-title {
-         font-size: 86px;
-        line-height: 101px;
-        margin-left: 10px;
-    }
+
 }
  @media (max-width:360px) {
     .heder-logo {
