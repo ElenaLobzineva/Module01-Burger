@@ -691,7 +691,7 @@ body {
         display: none;
     }
 }
-@media (max-width:1000px) {
+@media (max-width: 1000px) {
     .container {
         max-width: 738px;
     }
@@ -724,7 +724,6 @@ body {
     .dop-menu-header {
         margin-top: -14px;
     }
-
     .dop-menu {
       overflow: hidden;
       height: 838px;
@@ -743,17 +742,38 @@ body {
     .dop-menu .dop-menu-grid-item {
      flex: 0 0 281px;
     }
-    .footer {
-      margin-top: -62px
-    }
     .footer-box {
         margin-top: -50px;
     }
-    .footer-tel {                                 /*Старое меню с телефонами скрывается, когда размер <1000*/
+    .footer-list + .footer-list-tel {             /*Новое меню с телефонами внизу футера появляется, когда размер <1000*/
+        display: block;
+    }
+    .footer-tel {                                 /*Старое меню с телефонами сюоку скрывается, когда размер <1000*/
      display: none;
     }
-    .footer-list + .footer-list-tel {             /*Новое меню с телефонами сбоку появляется, когда размер <1000*/
-     display: block;
+    .content {
+       margin-top: -55px;
+    }
+    .content-title span {
+        font-size: 22px;
+        margin-left: 10px;
+        }
+    .content-title  {
+        font-size: 90px;
+        line-height: 101px;
+        margin-left: 10px;
+        margin-top: -95px;
+    }
+    .content-text {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .content-link {
+        margin-left: 10px;
+    }
+    .main img {
+        width: 40em;
+        margin-right: 200px;
     }
 }
 @media (min-width: 766px) {                    /*Скрываем  меню-бургер, когда ширина больше 765px */
@@ -771,6 +791,29 @@ body {
      #modal {
         margin: 23px 65px;
     }
+        .content-title span {
+        font-size: 21px;
+        margin-left: 10px;
+        margin-top: -95px;
+        }
+    .content {
+        margin-bottom: -58px;
+    }
+    .main img {
+        max-height: 43em;
+}
+    .promo {
+        padding-top: 106px;
+    }
+    .promo-left {
+        padding: 54px 30px;
+    }
+    .promo-right {
+        padding: 54px 30px;
+    }
+    .footer {
+        margin-top: 80px;
+}
 }
  @media (max-width:567px) {
     .title {
@@ -856,7 +899,6 @@ body {
     .footer-box {
         position: relative;
         flex-direction: column;
-
     }
     .footer-logo {
         position: absolute;
@@ -884,6 +926,11 @@ body {
     .footer-list {
         margin-bottom: 10px;
     }
+    .content-title {
+         font-size: 86px;
+        line-height: 101px;
+        margin-left: 10px;
+    }
 }
  @media (max-width:360px) {
     .heder-logo {
@@ -895,8 +942,20 @@ body {
         background-position: 25% center;
     }
     #modal {
-         margin: 23px 22px;
-         padding: 15px;
+        margin: 23px 22px;
+        padding: 15px;
+    }
+    .content-title {
+        font-size: 60px;
+        line-height: 66px;
+    }
+    .content-title span {
+        font-size: 20px;
+        }
+    .content-text {
+        font-size: 14px;
+        margin-left: 20px;
+        max-width: 46%;
     }
 }
 @media (max-width:320px) {
