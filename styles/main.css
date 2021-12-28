@@ -751,38 +751,6 @@ body {
     .footer-tel {                                 /*Старое меню с телефонами сюоку скрывается, когда размер <1000*/
      display: none;
     }
-    .content {
-       margin-top: -55px;
-       width: 1118px;
-    }
-    .content-title span {
-        font-size: 22px;
-        margin-left: 10px;
-        }
-    .content-title  {
-        font-size: 60px;
-        line-height: 88px;
-        margin-left: 10px;
-        margin-top: -95px;
-    }
-    .content-text {
-        font-size: 14px;
-        margin-left: 10px;
-        max-width: 312px;
-    }
-    .content-link {
-        margin-left: 10px;
-    }
-    .main img { 
-        width: 540px;
-        right: -29px;
-        top: 70px;
-    }
-    }
-    .visual-bg {
-        width: 150px;
-        margin-right: 10px;
-    }
 }
 @media (min-width: 766px) {                    /*Скрываем  меню-бургер, когда ширина больше 765px */
     .heder-burger {
@@ -799,26 +767,11 @@ body {
      #modal {
         margin: 23px 65px;
     }
-    .content-title span {
-        font-size: 21px;
-        margin-left: 10px;
-        margin-top: -95px;
-        }
-    .content {
-        margin-bottom: -58px;
-    }
-    .promo {
-        padding-top: 106px;
-        gap: 30px 0px;
-    }
-    .promo-left {
-        padding: 54px 30px;
-    }
-    .promo-right {
-        padding: 54px 30px;
-    }
     .footer {
         margin-top: 80px;
+    }
+    .content-link {
+        margin-left: 10px;
     }
 }
  @media (max-width:567px) {
@@ -932,8 +885,58 @@ body {
     .footer-list {
         margin-bottom: 10px;
     }
+    .main img {
+        display: none;
+    }
+    .visual {
+        display: none;
+    }
+    .wrapper {
+        display: block;
+    }
+    .content-title {
+        font-size: 90px;
+        margin-left: 10px;
+    }
+    .content-title span {
+        font-size: 20px;
+    }
+    .content-text {
+        font-size: 19px;
+        width: 475px;
+        margin-left: 10px;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .promo-left {
+        margin-bottom: 40px;
+    }
+}
+@media (max-width:428px) {
+    .content-title {
+        font-size: 78px;
+    }
+    .content-text {
+        width: 355px;
+    }
 
 }
+@media (max-width:414px) {
+    .content-title span {
+        font-size: 19px;
+    }
+    .content-title {
+        font-size: 57px;
+    }
+    .content-text {
+        width: 235px;
+    }
+    .content-link {
+        margin-left: 15px;
+    }
+
+}  
  @media (max-width:360px) {
     .heder-logo {
         width: 116px;
@@ -946,18 +949,6 @@ body {
     #modal {
         margin: 23px 22px;
         padding: 15px;
-    }
-    .content-title {
-        font-size: 60px;
-        line-height: 66px;
-    }
-    .content-title span {
-        font-size: 20px;
-        }
-    .content-text {
-        font-size: 14px;
-        margin-left: 20px;
-        max-width: 46%;
     }
 }
 @media (max-width:320px) {
