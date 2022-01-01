@@ -7,11 +7,11 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-.heder{
+.header{
     border-bottom: 1px solid #DEDEDE;
 }
 
-.heder{
+.header{
     font-family: 'Open Sans', sans-serif;
     display: flex;
     align-items: center;
@@ -19,23 +19,23 @@ body {
     padding-top: 26px;
     padding-bottom: 25px;
 }
-.heder-item {
+.header-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-basis: 68.5%;
 
 }
-.heder-nav{
+.header-nav{
   display: flex;
   list-style-type: none;
   padding-left: 0;
   gap: 46px;
 }
-.heder-nav a:hover{
+.header-nav a:hover{
     color: #FFC725;
 }
-.heder-logo{
+.header-logo{
     display: block;
     background-image: url(../images/logo.svg);
     width: 176px;
@@ -44,13 +44,13 @@ body {
     background-size: cover;
 }
 
-.heder-nav a{
+.header-nav a{
     font-weight: 600;
     font-size: 20px;
     color: #443737;   
     text-decoration: none; 
 }
-.heder-nav a.active::after{
+.header-nav a.active::after{
     content: '';
     width: 100%;
     height: 3px;
@@ -58,7 +58,7 @@ body {
     border-radius: 1.5px;
     display: block;
 }
-.heder-nav a.active::after {
+.header-nav a.active::after {
     background: #FFC725;
 }
 
@@ -637,7 +637,7 @@ html {
 
     /*Modal*/
 .burger {                /*Меню из трех полосок - бургер*/
-    background-image: url(../images/heder-burger-logo.svg);
+    background-image: url(../images/header-burger-logo.svg);
     height: 22px;
     width: 34px;
     border: none;
@@ -669,7 +669,7 @@ html {
     }
 
                                /*Меню в окне*/
-.heder-nav-modal {        
+.header-nav-modal {        
     flex-direction: column;
     max-width: 246px;
     align-items: center;
@@ -678,16 +678,16 @@ html {
     line-height: 30px;
     margin: 0 auto;
     }
-    .heder-nav-modal  a{        
+    .header-nav-modal  a{        
     font-weight: 600;
     font-size: 20px;
     color: #443737; 
     text-decoration: none;
     }
-.heder-nav-modal a:hover{
+.header-nav-modal a:hover{
     color: #FFC725;
     }
-.heder-nav-modal a.active::after{
+.header-nav-modal a.active::after{
     content: '';
     width: 61px;
     height: 3px;
@@ -696,7 +696,7 @@ html {
     margin-left: auto;
     margin-right: auto 
     }
-.heder-nav-modal a.active::after {
+.header-nav-modal a.active::after {
     background: #FFC725;
     }
 
@@ -711,15 +711,15 @@ html {
     .container {
         max-width: 738px;
     }
-    .heder-logo {
+    .header-logo {
         width: 150px;
         height: 48px;
         background-size: contain;
     }
-    .heder-nav {
+    .header-nav {
         gap: 22px;
     }
-    .heder-item {
+    .header-item {
         flex-basis: 75.5%;
     }
     .bg {
@@ -769,15 +769,15 @@ html {
     }
 }
 @media (min-width: 766px) {                    /*Скрываем  меню-бургер, когда ширина больше 765px */
-    .heder-burger {
+    .header-burger {
         display: none;
     }
 }
 @media (max-width: 765px) {
-     .heder-nav {
+     .header-nav {
          display: none;
      }
-     .heder {
+     .header {
          gap: 21px;
      }
     .footer {
@@ -963,7 +963,7 @@ html {
 
 }  
  @media (max-width:360px) {
-    .heder-logo {
+    .header-logo {
         width: 116px;
         height: 37px;
         background-size: contain;
