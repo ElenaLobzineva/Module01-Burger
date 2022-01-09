@@ -512,6 +512,8 @@ html {
                /* Style INDEX */ 
 .main {
     background: linear-gradient(180deg, #0C4C7B -100%, #1E2F40 100%);
+    display: block;
+    box-sizing: border-box;
 }
 .wrapper {
     max-width: 1180px;
@@ -565,16 +567,27 @@ html {
     display: flex;
     justify-content: flex-end;
     position: relative;
+    width: 100%; 
 }
 .visual-bg {
-    width: 432px;
+    width: 200px;
     height: 100%;
+    margin-left: 170px;
+    display: block;
+    vertical-align: top;
     background: linear-gradient(2.42deg, #F37335 -19.6%, #FBB731 100.79%, #FDC830 100.79%);
 }
-.main img {
-    width: 829px;
+.img-div {
+    min-width: 600px ;
+    min-height: 590px;
+    padding: 270px 10px 10px 10px;
     position: absolute;
-    right: -168px;
+}
+.main img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
 }
 .promo {
     padding-top: 186px;
@@ -642,6 +655,7 @@ html {
     width: 34px;
     border: none;
     cursor: pointer;
+    background-size: contain;
     background-color: transparent; 
 }
 .burger-close {       /*Крестик закрывающий окно*/
@@ -701,7 +715,25 @@ html {
     }
 
 /*Responsive*/
-
+@media (max-width: 1200px) {
+    .content {
+        margin-left: 20px;
+    }
+}
+@media (max-width: 1100px) {
+    .visual {
+    }
+    .content-title {
+    font-size: 107px;
+}
+.content {
+    margin-left: 20px;
+}
+.content-text {
+    max-width: 415px;
+   font-size: 18px;
+   }
+}
 @media (min-width: 1001px) {                     /*Скрываем новое меню с телефонами сбоку, когда размер больше 1001px */
     .footer-list + .footer-list-tel {
         display: none;
@@ -710,6 +742,12 @@ html {
 @media (max-width: 1000px) {
     .container {
         max-width: 738px;
+    }
+    .content-title {
+    font-size: 85px;
+    }
+    .content-text {
+    max-width: 421px;
     }
     .header-logo {
         width: 150px;
@@ -767,10 +805,36 @@ html {
     .footer-tel {                                 /*Старое меню с телефонами сюоку скрывается, когда размер <1000*/
      display: none;
     }
+      .promo {
+        padding-top: 90px
+    }
+    .footer {
+        margin-top: 31px;
+    }
+}
+@media (max-width: 980px) {
+.promo-left {
+    padding-top: 72px;
+    padding-left: 32px;
+    padding-bottom: 50px;
+    }
+    .promo-right {
+    padding: 60px 0 60px 30px;
+    }
+}
+@media (max-width: 930px) {
+    .visual-bg {
+    display: none;
+    }
+    .img-div {
+        min-width: 505px;
+        margin-top: 140px;
+    }
+ 
 }
 @media (min-width: 766px) {                    /*Скрываем  меню-бургер, когда ширина больше 765px */
     .header-burger {
-        display: none;
+        display: none; 
     }
 }
 @media (max-width: 765px) {
@@ -791,6 +855,9 @@ html {
     }
    .footer-item h2 {
     font-size: 17px
+    }
+    .img-div {
+        display: none;
     }
 }   
  @media (max-width:567px) {
@@ -899,7 +966,6 @@ html {
     .menu-select {
         flex-basis: 136px;
     }
-
     .footer-item h2 {
         font-size: 18px ;
         margin-bottom:  24px;
@@ -908,13 +974,13 @@ html {
         margin-top: 87px;
     }
     .footer-list {
-        margin-bottom: 10px;
+        margin-bottom: -42px;
     }
     .main img {
         display: none;
     }
     .visual {
-        display: none;
+        display: block;
     }
     .wrapper {
         display: block;
@@ -960,7 +1026,6 @@ html {
     .content-link {
         margin-left: 15px;
     }
-
 }  
  @media (max-width:360px) {
     .header-logo {
