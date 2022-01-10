@@ -10,7 +10,14 @@ body {
 .header{
     border-bottom: 1px solid #DEDEDE;
 }
-
+.menu-grid-icon {          /* Иконка корзинки */
+    background-image: url(../images/shopping-cart.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    width: 18px;
+    height: 18px;
+}
 .header{
     font-family: 'Open Sans', sans-serif;
     display: flex;
@@ -277,15 +284,17 @@ body {
     text-align: center;
 }
 .menu-grid-btn {           /* Кнопка целиком */
-    background-color: #FBB731;
-    border-radius: 5px; 
-    width: 152px;
-    height: 37px;
-    border: 0;   
+    background: #FBB731;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 33px;
+    cursor: pointer;
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 0 auto;
+    align-items:center;
+    justify-content: center;
+    gap: 9px;
+    transition: 0.2s;
 }
 .menu-grid-btn:hover {
     background-color: #F37335;
@@ -300,15 +309,7 @@ body {
     text-decoration: none;
     margin-left: 5px;    
 }
-.menu-grid-icon {          /* Иконка корзинки */
-    background-image: url(../images/cart.png);
-    width: 18px;
-    height: 18px;
-    background-repeat: no-repeat;
-    display: inline-block;
-    margin-bottom: -4px;
-    margin-right: 7px;
-}
+
 
                                       /* Дополнительное меню */
 
@@ -409,15 +410,6 @@ html {
     font-size: 14px;
     text-decoration: none;
     margin-left: 5px;
-}
-.dop-menu-grid-icon {          /* Иконка корзинки */
-    background-image: url(../images/cart.svg);
-    width: 18px;
-    height: 18px;
-    background-repeat: no-repeat;
-    display: inline-block;
-    margin-bottom: -4px;
-    margin-right: 7px;   
 }
                                  /* ПОДВАЛ */
 .footer {
