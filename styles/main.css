@@ -852,7 +852,19 @@ html {
     .content {
     padding-top: 110px;
     padding-bottom: 140px;
-    }   
+    } 
+    .banner-box {
+        margin-top: 75px;
+    }  
+    .menu-header {
+        margin-bottom: 24px;
+    }
+    .dop-menu-header {
+    margin-top: 21px;
+    }
+    .footer {
+    margin-top: 100px;
+    }
 }
  @media (max-width:567px) {
     .promo {
@@ -878,8 +890,8 @@ html {
     .dop-menu .dop-menu-grid-cover img {
         height: 100%;
     }
-      .dop-menu {
-          height: 129vw;
+    .dop-menu {
+          height: 121vw;
     }
     .dop-menu .dop-menu-grid {
         padding-bottom: 34vw;
@@ -928,7 +940,6 @@ html {
         font-size: 16px;
         margin-bottom: 7px;
     }
-
     .banner-text {
         margin-bottom: 30px;
     }
@@ -972,9 +983,9 @@ html {
         text-align: right;
     }
     .footer {
-        padding-top: 100px;
-        padding-bottom: 60px;
-        margin-top: 15px;
+        padding-top: 48px;
+        padding-bottom: 33px;
+        margin-top: 0;
      }
      .footer-list + .footer-list-tel {
          display: none;
