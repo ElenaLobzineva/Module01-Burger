@@ -287,7 +287,7 @@ body {
     text-align: center;
 }
 .menu-grid-price {          /* Цена под картинкой */
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 20px;
     color: #979797;
     text-align: center;
@@ -783,9 +783,7 @@ html {
     .dop-menu .dop-menu-grid-item {
      flex: 0 0 40vw;
     }
-    .footer-box {
-        margin-top: -50px;
-    }
+
     .footer-list + .footer-list-tel {             /*Новое меню с телефонами внизу футера появляется, когда размер <1000*/
         display: block;
     }
@@ -884,7 +882,7 @@ html {
           height: 129vw;
     }
     .dop-menu .dop-menu-grid {
-        padding-bottom: 33vw;
+        padding-bottom: 34vw;
     }
     .title {
         font-size: 38px;
@@ -916,6 +914,7 @@ html {
         flex-basis: 136px;
         padding: 13px 24px 13px 15px;
         background-position: 91%;
+        background-color: #fff;
     }
     .menu-grid-title {
         font-size: 15px;
@@ -1023,17 +1022,32 @@ html {
       .footer {
         margin-top: 30px;
     }
+    .menu-grid-text {
+        font-size: 12px;
+    }
+    .menu-grid-btn {
+        gap: 3px;
+        padding: 10px 25px;
+    }
+    .dop-menu-grid-text {
+    font-size: 12px;
+    }
+    .dop-menu-grid {
+    gap: 50px 8px;
+    }
 }
 @media (max-width:320px) {
     .banner-box {
         background-position: 25% center;
         }
-        .container {
-            max-width: 319px;
+    .container {
+        max-width: 319px;
         }
-        .menu-grid {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px 5px;
-            margin-bottom: 65px;
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px 5px;
+        margin-bottom: 15px;
     }
-}
+
+    
+} 
