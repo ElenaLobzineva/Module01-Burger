@@ -692,6 +692,7 @@ html {
     list-style-type: none;
     line-height: 30px;
     margin: 0 auto;
+    padding: 0;
     }
     .header-nav-modal  a{        
     font-weight: 600;
@@ -755,12 +756,6 @@ html {
     .header-item {
         flex-basis: 75.5%;
     }
-    .bg {
-        margin-bottom: -66px;
-    }
-    .menu-header {
-        margin-top: -23px;
-    }
     .banner-box {
         background-position: -80px center;
         padding: 100px 40px 120px;
@@ -768,14 +763,11 @@ html {
     .menu-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 50px 15px;
-        margin-bottom: 65px;
-    }
-    .dop-menu-header {
-        margin-top: -14px;
+        margin-bottom: 7px;
     }
     .dop-menu {
       overflow: hidden;
-      height: 644px;
+      height: 662px;
       margin-bottom: 0px;
     }
     .dop-menu .dop-menu-grid {
@@ -789,7 +781,7 @@ html {
      height: 320px;
     }
     .dop-menu .dop-menu-grid-item {
-     flex: 0 0 281px;
+     flex: 0 0 40vw;
     }
     .footer-box {
         margin-top: -50px;
@@ -800,13 +792,12 @@ html {
     .footer-tel {                                 /*Старое меню с телефонами сюоку скрывается, когда размер <1000*/
      display: none;
     }
-      .promo {
+    .promo {
         padding-top: 90px
     }
     .footer {
-        margin-top: 31px;
+        margin-top: 132px;
     }
-  
 }
 @media (max-width: 980px) {
 .promo-left {
@@ -851,9 +842,6 @@ html {
     .content-link {
         margin-left: 10px;
     }
-    .footer-list li {
-        max-width: 200px;
-    }
    .footer-item h2 {
     font-size: 17px
     }
@@ -893,10 +881,10 @@ html {
         height: 100%;
     }
       .dop-menu {
-          height: 109vw;
+          height: 129vw;
     }
     .dop-menu .dop-menu-grid {
-        padding-bottom: 24vw;
+        padding-bottom: 33vw;
     }
     .title {
         font-size: 38px;
@@ -909,12 +897,12 @@ html {
     }
     .bg {
         padding: 55px 0;
-        margin-bottom: 33px;
     }
     .banner-box {
         background-position: 17% center;
         padding: 35px 24px 54px;
         margin-bottom: 40px;
+        margin-top: 37px;
     }
     .menu-title {
         font-size: 27px;
@@ -941,9 +929,7 @@ html {
         font-size: 16px;
         margin-bottom: 7px;
     }
-    .banner {
-        margin-top: -107px;
-    }
+
     .banner-text {
         margin-bottom: 30px;
     }
@@ -955,6 +941,7 @@ html {
     }
     .menu-grid {
         gap: 24px 10px;
+        margin-bottom: 40px;
     }
     .dop-menu-title {
         font-size: 27px;
@@ -986,9 +973,9 @@ html {
         text-align: right;
     }
     .footer {
-        margin-top: -2px;
         padding-top: 100px;
         padding-bottom: 60px;
+        margin-top: 15px;
      }
      .footer-list + .footer-list-tel {
          display: none;
@@ -1033,7 +1020,9 @@ html {
     .bg {
         background-position: 25% center;
     }
- 
+      .footer {
+        margin-top: 30px;
+    }
 }
 @media (max-width:320px) {
     .banner-box {
@@ -1046,5 +1035,5 @@ html {
             grid-template-columns: repeat(2, 1fr);
             gap: 15px 5px;
             margin-bottom: 65px;
-}
+    }
 }
